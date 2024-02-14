@@ -29,3 +29,13 @@ let newObject: Interface = {
     number: 100,
     boolean: true
 }
+
+function circle(diam: number): string {
+    return 'The circumference is ' + Math.PI * diam;
+  }
+
+console.log(circle(50));
+
+const circleArrow =(diam: number, optional?: number | string): string => {
+    return 'The circumference is ' + Math.PI * diam;
+}
