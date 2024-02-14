@@ -39,3 +39,39 @@ console.log(circle(50));
 const circleArrow =(diam: number, optional?: number | string): string => {
     return 'The circumference is ' + Math.PI * diam;
 }
+
+class Person {
+    constructor(
+    public name: string,
+    private isCool: boolean,
+    protected email: string,
+    ) {}
+  
+    sayHello() {
+      return `Hi, my name is ${this.name} and I have ${this.email} pets`;
+    }
+  }
+
+const person1 = new Person('Name', true, 'hi';
+
+let people: Person[] = [person1];
+
+class Programmer extends Person {
+    programmingLanguages: string[];
+  
+    constructor(
+      name: string,
+      isCool: boolean,
+      email: string,
+      pL: string[]
+    ) {
+      super(name, isCool, email);
+      this.programmingLanguages = pL;
+    }
+  }
+
+  const addID = <T extends {name: string}>(obj: T) => {
+    let id = Math.floor(Math.random() * 1000);
+  
+    return { ...obj, id };
+  };
