@@ -75,3 +75,7 @@ class Programmer extends Person {
   
     return { ...obj, id };
   };
+
+  interface hasLength {
+    length: number;
+  }
